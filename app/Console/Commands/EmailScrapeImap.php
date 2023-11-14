@@ -29,7 +29,7 @@ class EmailScrapeImap extends Command
 
 
         // Connect to the mailbox
-        $imapStream = imap_open($mailbox, 'reservations@theappkit.com', 'codecoy@123');
+        $imapStream = imap_open($mailbox, 'email', 'password');
 
         if (!$imapStream) {
             $this->error('Unable to connect to the mailbox.');

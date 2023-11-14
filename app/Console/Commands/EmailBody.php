@@ -38,7 +38,7 @@ class EmailBody extends Command
 
 
         // Connect to the mailbox
-        $imapStream = imap_open($mailbox, 'reservations@theappkit.com', 'codecoy@123');
+        $imapStream = imap_open($mailbox, 'email', '');
 
         if (!$imapStream) {
             $this->error('Unable to connect to the mailbox.');
